@@ -1,0 +1,254 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.header .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.header .top-right {
+    text-align: right;
+}
+
+.header .top-right a img {
+    color: #333;
+    text-decoration: none;
+    margin-left: 15px;
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 6px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+.t_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру по горизонтали */
+    justify-content: center; /* Выравнивание по центру по вертикали */
+    margin: 30px auto; /* Центрирование контейнера */
+    width: 100%;
+    max-width: 1400px;
+    padding: 0;
+}
+/*Стили для раздела О нас*/
+.t_info {
+    display: inline;
+}
+.group-info {
+    height: 900px;
+    background-color: antiquewhite;
+    float: right;
+    margin-right: 0;
+    margin-left: 2%;
+    width: 49%;
+}
+.t_text {
+    padding: 44px 50px;
+    line-height: 1.2;
+}
+.photo-info img {
+    position: relative;
+    margin-left: 0;
+    border-radius: 10px;
+
+}
+
+/* Стили для раздела преподавателей */
+#teacher {
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+.teacher {
+    border: 4px solid black;
+    border-radius: 10px;
+    height: auto;
+    width: 30%; /* Ширина карточки */
+    text-align: center;
+    margin-right: 20px; /* Отступ между карточками */
+    box-sizing: border-box; 
+    transition: transform 0.5s ease-in;
+}
+
+.teacher:hover{
+    transform: scale(1.05);
+}
+.teacher:last-child {
+    margin-right: 0; /* Убираем отступ у последней карточки */
+}
+
+.teacher img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto; 
+}
+
+.teacher h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.teacher p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.teacher ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.teacher ul li {
+    font-size: 15px;
+    font-weight: 300px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Контейнер для карточек преподавателей */
+.teachers-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+/*Стили для занятий*/
+/*Стили для контактов*/
+.contact-container {
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 70px;
+    min-height: 300px;
+    width:300px;
+    margin-right: 600px;
+    font-size: 18px;
+    line-height: 1.55;
+   
+}
+.contact-container a {
+    text-decoration: none;
+    color: black;
+   
+    font-weight: 300;
+}
+.contact-container strong {
+    font-weight: 700px;
+}
+.contact-container p {
+    margin-left: 20px;
+}
+/*Подвал*/
+footer {
+    background: rgba(0, 0, 0, 0.5); /* Синий полупрозрачный фон */
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-left img {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.footer-center h3 {
+    font-size: 24px;
+    color: #ffffffe3;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: #00ff15;
+    text-shadow: 0px 5px 3px white;
+}
+.footer-links ul, .footer-links li {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+}
