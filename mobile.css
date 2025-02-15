@@ -1,0 +1,146 @@
+/* Мобильная адаптация */
+/* Общие стили для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .header {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header .logo img {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .header .top-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header .top-right a img {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .nav-menu {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .nav-menu a {
+        margin: 5px 0; 
+    }
+
+    .t_container {
+        padding: 10px; 
+    }
+
+    .t_info {
+        flex-direction: column; 
+    }
+
+    .group-info {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .photo-info img {
+        width: 100%;
+        margin-top: 5px;
+        height: auto;
+    }
+
+    .teachers-container, .lessons-container {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .teacher, .box {
+        width: 100%; 
+        margin-right: 0; 
+    }
+    .teacher:hover {
+        transform: scale(1);
+    }
+
+    .contact-container {
+        position: static; 
+        width: 100%; 
+        padding: 20px; 
+        margin: 0; 
+    }
+
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-section {
+        min-width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .footer-left img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-center h3 {
+        font-size: 20px; 
+    }
+
+    .footer-links a {
+        font-size: 16px; 
+    }
+}
+
+/* Адаптация для очень маленьких экранов */
+@media (max-width: 480px) {
+    .header .logo img {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .header .top-right a img {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .t_text {
+        padding: 20px; 
+    }
+
+    .teacher h2, .box h3 {
+        font-size: 18px; 
+    }
+
+    .teacher p, .box p {
+        font-size: 14px;
+    }
+
+    .teacher ul li {
+        font-size: 12px; 
+    }
+
+    .contact-container {
+        padding: 10px; 
+    }
+
+    .footer-left img {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .footer-center h3 {
+        font-size: 18px; 
+    }
+
+    .footer-links a {
+        font-size: 14px; 
+    }
+}
